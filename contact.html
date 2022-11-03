@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.sub-heading {
+  line-height: 2;
+  font-size: 18px;
+  text-align: center; }
+
+/* :: 18.0 Contact Area CSS */
+.map-area {
+  position: relative;
+  z-index: 2; }
+  .map-area #googleMap {
+    width: 100%;
+    height: 680px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .map-area #googleMap {
+        height: 500px; } }
+    @media only screen and (max-width: 767px) {
+      .map-area #googleMap {
+        height: 350px; } }
+
+.single-contact-information {
+  position: relative;
+  z-index: 1; }
+  .single-contact-information h6 {
+    font-size: 14px;
+    border-bottom: 2px solid #40ba37;
+    display: inline-block;
+    color: #40ba37; }
+
+.contact-form-area .form-control {
+  height: 52px;
+  width: 100%;
+  background-color: #f3f5f8;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 15px;
+  border: none;
+  border-left: 3px solid #f3f5f8;
+  border-radius: 0;
+  padding: 15px 30px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .contact-form-area .form-control:focus {
+    border-left: 3px solid #40ba37;
+    box-shadow: none; }
+.contact-form-area textarea.form-control {
+  height: 200px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+
+/* :: 19.0 Elements Area CSS */
+.elements-title h2 {
+  font-size: 30px;
+  margin-bottom: 70px;
+  color: #4b4b4b; }
+
+.single-pie-bar h6 {
+  font-size: 18px;
+  margin-bottom: 0; }
+
+.single-cool-fact {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .single-cool-fact img {
+    display: block;
+    margin: 0 auto 10px; }
+  .single-cool-fact h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #40ba37;
+    font-weight: 700; }
+  .single-cool-fact h6 {
+    font-size: 18px;
+    margin-bottom: 0; }
+
+/* Accordians */
+.single-accordion.panel {
+  background-color: #ffffff;
+  border: 0 solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 0 0 transparent;
+  margin-bottom: 15px; }
+.single-accordion:last-of-type {
+  margin-bottom: 0; }
+.single-accordion h6 {
+  margin-bottom: 0;
+  text-transform: uppercase; }
+  .single-accordion h6 a {
+    border-radius: 0;
+    background-color: #40ba37;
+    color: #ffffff;
+    border-left: 3px solid #1c8314;
+    display: block;
+    margin: 0;
+    padding: 20px 60px 20px 20px;
+    position: relative;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600; }
+    .single-accordion h6 a span {
+      font-size: 10px;
+      position: absolute;
+      right: 20px;
+      text-align: center;
+      top: 23px; }
+      .single-accordion h6 a span.accor-open {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); }
+    .single-accordion h6 a.collapsed {
+      background-color: #f3f5f8;
+      color: #9b9b9b;
+      border-left: 3px solid #40ba37; }
+      .single-accordion h6 a.collapsed span.accor-close {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); }
+      .single-accordion h6 a.collapsed span.accor-open {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100); }
+.single-accordion .accordion-content {
+  border-top: 0 solid transparent;
+  box-shadow: none; }
+  .single-accordion .accordion-content p {
+    padding: 20px 15px 5px;
+    margin-bottom: 0; }
+
+	</style>
+</head>
+
+<body>
+	<div class="contact-information-area section-padding-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="logo mb-80">
+						<img src="img/core-img/logo.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Contact Text -->
+				<div class="col-12 col-lg-5">
+					<div class="contact-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
+							Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis.
+							Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus.</p>
+						<p>Orci varius natoque penatibus et magnis dis ac pellentesque tortor. Aenean congue parturient
+							montes, nascetur ridiculus mus.</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<!-- Single Contact Information -->
+					<div class="single-contact-information mb-30">
+						<h6>Address:</h6>
+						<p>481 Creekside Lane Avila <br>Beach, CA 93424</p>
+					</div>
+					<!-- Single Contact Information -->
+					<div class="single-contact-information mb-30">
+						<h6>Phone:</h6>
+						<p>+53 345 7953 32453 <br>+53 345 7557 822112</p>
+					</div>
+					<!-- Single Contact Information -->
+					<div class="single-contact-information mb-30">
+						<h6>Email:</h6>
+						<p>yourmail@gmail.com</p>
+					</div>
+				</div>
+
+				<!-- Newsletter Area -->
+				<div class="col-12 col-lg-4">
+					<div class="newsletter-form bg-img bg-overlay" style="background-image: url(img/bg-img/bg1.jpg);">
+						<form action="#" method="post">
+							<input type="email" name="email" placeholder="Subscribe to newsletter">
+							<button type="submit" class="btn delicious-btn w-100">Subscribe</button>
+						</form>
+						<p>Fusce nec ante vitae lacus aliquet vulputate. Donec sceleri sque accumsan molestie.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ##### Contact Information Area End ##### -->
+
+	<!-- ##### Contact Form Area Start ##### -->
+	<div class="contact-area section-padding-0-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-heading">
+						<h3>Get In Touch</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="contact-form-area">
+						<form action="#" method="post">
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<input type="text" class="form-control" id="name" placeholder="Name">
+								</div>
+								<div class="col-12 col-lg-6">
+									<input type="email" class="form-control" id="email" placeholder="E-mail">
+								</div>
+								<div class="col-12">
+									<input type="text" class="form-control" id="subject" placeholder="Subject">
+								</div>
+								<div class="col-12">
+									<textarea name="message" class="form-control" id="message" cols="30" rows="10"
+										placeholder="Message"></textarea>
+								</div>
+								<div class="col-12 text-center">
+									<button class="btn delicious-btn mt-30" type="submit">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ##### Contact Form Area End ##### -->
+
+
+</body>
+
+</html>
